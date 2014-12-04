@@ -1,0 +1,11 @@
+Use cscoope in win
+
+1.extract the zipfile in bin
+
+2.put xcscope.el in site-lisp
+
+3.command line usage
+
+    findf . -name "*.[h|c|cpp]" > cscope.files
+
+    cscope -b
