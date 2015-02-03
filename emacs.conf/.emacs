@@ -68,6 +68,7 @@
 ;;)
 ;;)
 (require 'xcscope)
+(cscope-setup)
 ;
 ; Ido
 ;--------------------------------------------------------------------
@@ -223,15 +224,6 @@
 (setq c-basic-offset 4)
 (setq c-tab-width 4)
 (setq c-indent-level 4)
-
-(setq c-mode-hook
-    (function (lambda ()
-                (setq indent-tabs-mode nil)
-                (setq c-indent-level 4))))
-(setq c++-mode-hook
-    (function (lambda ()
-                (setq indent-tabs-mode nil)
-                (setq c-indent-level 4))))
 
 
 ;shell,gdb退出后，自动关闭该buffer
