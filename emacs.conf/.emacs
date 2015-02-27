@@ -60,7 +60,7 @@
 ;
 ; Cscope
 ;--------------------------------------------------------------------
-(load-file "/home/jinwei/.emacs.d/xcscope.el") 
+(load-file "~/.emacs.d/xcscope.el") 
 ;;(load-file "/usr/share/emacs/site-lisp/xcscope.el") ;xcscope.el
 ;;(add-hook 'c-mode-common-hook
 ;;'(lambda()
@@ -68,7 +68,7 @@
 ;;)
 ;;)
 (require 'xcscope)
-(cscope-setup)
+;(cscope-setup)
 ;
 ; Ido
 ;--------------------------------------------------------------------
