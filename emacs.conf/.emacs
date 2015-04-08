@@ -9,7 +9,8 @@
 ;--------------------------------------------------------------------
 ;(set-frame-font "Consolas")
 ;(set-frame-font "Monaco")
-(set-face-attribute 'default nil :height 120) ;Font size
+;(set-face-attribute 'default nil :height 120) ;Font size ubuntu
+(set-face-attribute 'default nil :height 150) ;Font size mac
 (line-number-mode 1)
 ;(global-linum-mode t ) ;line num in left side
 (show-paren-mode t);显示括号匹配
@@ -202,8 +203,8 @@
 
 ; 启动窗口大小
 (setq default-frame-alist
-      '((height . 120)(width . 200) (menu-bar-lines . 0) (tool-bar-lines . 0)));PC
-      ;'((height . 35) (width . 150) (menu-bar-lines . 0) (tool-bar-lines . 0)));NB
+      ;'((height . 120)(width . 200) (menu-bar-lines . 0) (tool-bar-lines . 0)));PC
+      '((height . 36) (width . 130) (menu-bar-lines . 0) (tool-bar-lines . 0)));NB
 
 
 ;scroll other window
