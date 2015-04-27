@@ -203,8 +203,8 @@
 
 ; 启动窗口大小
 (setq default-frame-alist
-      ;'((height . 120)(width . 200) (menu-bar-lines . 0) (tool-bar-lines . 0)));PC
-      '((height . 36) (width . 130) (menu-bar-lines . 0) (tool-bar-lines . 0)));NB
+      '((height . 100)(width . 180) (menu-bar-lines . 0) (tool-bar-lines . 0)));PC
+      ;'((height . 36) (width . 130) (menu-bar-lines . 0) (tool-bar-lines . 0)));NB
 
 
 ;scroll other window
