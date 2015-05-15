@@ -15,7 +15,7 @@ got remote show lab
 //remote
 remove a branch on remote
  git push lab --delete testpull
-To git@gitlab.bj.sensetime.com:mark/image_framework.git
+To git@gitlab.1.git
  - [deleted]         testpull
 
 remove a branch locally
