@@ -13,3 +13,4 @@ git remote show
 got remote show lab
 
 
+problem there are 2 asynchrounous master..
