@@ -1,22 +1,15 @@
+origin:gerrit lab:gitlab
+
 1. git remote add lab git@gitlab...
 2. git remote update (update remote config)
 3. git pull lab master (to fetch HEAD of master)
 4. git pull lab brancha3.1 (fetch and merge a branch `brancha3.1` from remote lab to current local branch eg `localbranch3.1` found in 'git branch -v')
 5. git push lab localbranch3.1 (push a local branch `localbranch3.1`/if not exists on remote then create a remote branch on remote)
 
-**run`git pull origin master` to fetch to master before rebasing the gerrit master andpush to gerrit `git push origin HEAD:refs/for/master`
+**run`git pull origin master` to fetch HEAD of origin gerrit master before rebasing the gerrit master and push to gerrit `git push origin HEAD:refs/for/master`
 
 other commands:
 git remote show
 got remote show lab
 
 
-
-//remote
-remove a branch on remote
- git push lab --delete testpull
-To git@gitlab.1.git
- - [deleted]         testpull
-
-remove a branch locally
- git branch -D testpull
