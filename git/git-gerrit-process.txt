@@ -7,3 +7,5 @@ git pull
 git checkout xxx
 git rebase master
 git push origin HEAD:refs/for/master
+##hook
+git commit -a --amend
