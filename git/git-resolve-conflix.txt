@@ -1,0 +1,10 @@
+git reset --soft
+or
+git reset HEAD^^^^^
+git pull
+//edit the .git/apply/patch to solve or git rebase --skip to skip the patch
+git rebase --abort //to abort
+git commit -a //add
+git push origin HEAD:refs/for/yourbranch
+
+
