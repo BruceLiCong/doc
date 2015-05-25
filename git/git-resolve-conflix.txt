@@ -8,3 +8,7 @@ git commit -a //add
 git push origin HEAD:refs/for/yourbranch
 
 
+//NORMAL PROCESS
+edit the conflicts
+git add the edited files
+git rebase --continue
