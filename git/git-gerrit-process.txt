@@ -9,3 +9,7 @@ git rebase master
 git push origin HEAD:refs/for/master
 ##hook
 git commit -a --amend
+
+
+## to fix and hide the latest commit
+git commit -m '....' --amend
