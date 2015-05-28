@@ -222,9 +222,9 @@
 ; C/C++
 ;--------------------------------------------------------------------
 (setq c-default-style "BSD")
-(setq c-basic-offset 4)
-(setq c-tab-width 4)
-(setq c-indent-level 4)
+(setq c-basic-offset 8)
+(setq c-tab-width 8)
+(setq c-indent-level 8)
 
 
 ;shell,gdb退出后，自动关闭该buffer
