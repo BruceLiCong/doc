@@ -4,3 +4,6 @@ git diff VERSION_HASH
 
 git diff > 1.diff / git apply 1.diff
 
+color the white space
+git diff --color > 1.diff
+cat 1.diff
