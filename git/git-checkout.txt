@@ -1,0 +1,4 @@
+git checkout // checkout on staged area
+git checkout branch_remote // checkout a remote branch {git branch -v -r}
+git checkout branch_local // checkout a local branch
+git checkout -b branch_local // create and checkout a branch based on current branch

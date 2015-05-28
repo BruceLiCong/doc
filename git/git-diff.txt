@@ -1,0 +1,6 @@
+git diff
+git diff --cached
+git diff VERSION_HASH
+
+git diff > 1.diff / git apply 1.diff
+
