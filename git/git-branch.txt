@@ -1,0 +1,4 @@
+git branch -v
+git branch xxx // new branch and not switch
+git branch -v -r // see remote branch
+git checkout xxx // checkout remote branch in `git branch -v -r`
