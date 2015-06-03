@@ -3,3 +3,6 @@ git log --stat
 git log -p
 git log --graph --oneline --decorate
 git log --pretty=format:"%cn committed %h on %cd"
+
+
+git log -3
