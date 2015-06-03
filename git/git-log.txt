@@ -1,9 +1,23 @@
+#Format
 git log --oneline --decorate
 git log --stat
 git log -p
 git log --graph --oneline --decorate
 git log --pretty=format:"%cn committed %h on %cd"
 
-
+#Filter
 git log -3
 git log --after="2014-7-1" --before="2014-7-4"
+git log --author="John\|Mary"
+git log --grep="tracker"
+
+
+git log -- foo.py bar.py
+    The -- parameter is used to tell git log that subsequent arguments are file paths and not branch names. 
+    If there’s no chance of mixing it up with a branch, you can omit the --.
+
+#pickaxe
+git log -S"hello world"
+
+#Compare branch
+git log master..feature
