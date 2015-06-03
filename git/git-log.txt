@@ -6,3 +6,4 @@ git log --pretty=format:"%cn committed %h on %cd"
 
 
 git log -3
+git log --after="2014-7-1" --before="2014-7-4"
