@@ -1,0 +1,19 @@
+reference: https://help.github.com/articles/syncing-a-fork/
+
+--fetch upstream
+git remote -v
+git remote add upstream https://github.com/TrinityCore/TrinityCore
+git fetch upstream
+git remote -v
+git checkout 3.3.5
+git merge upstream/3.3.5
+
+--merge to local branch
+git status
+emacs cmake/macros/FindOpenSSL.cmake (fix conflicts)
+git status
+git add cmake/macros/FindOpenSSL.cmake (resolve)
+
+--sync to local and forked remote branch
+git commit -m 'merge upstream/3.3.5'
+git push origin 3.3.5
