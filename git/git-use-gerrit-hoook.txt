@@ -1,0 +1,9 @@
+if you work on gerrit and want to fix on something which is already pushed and created on a branch to remote
+there are 2 method
+
+1. `git commit --amend`
+   this will not change the local git commit id and the hooks will help you.
+2. `git rebase -i rev-hash` or `git rebase -i master`
+   to re-edit the commit history and use `fixup` or `f` for short to mark the fixed commit, 
+   git will replay the commit history, and append the fixed commit to the earlier one.
+   finally hooks on gerrit will help you.
