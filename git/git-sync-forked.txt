@@ -8,6 +8,7 @@ git remote add upstream https://github.com/TrinityCore/TrinityCore
 git fetch upstream
 git remote -v
 git checkout 3.3.5
+(to log difference between 2 branch: git log 3.3.5..upstream/3.3.5)
 git merge upstream/3.3.5
 
 --merge to local branch
