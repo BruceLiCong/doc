@@ -1,3 +1,5 @@
+
+# method 1
 reference: https://help.github.com/articles/syncing-a-fork/
 
 --fetch upstream
@@ -17,3 +19,34 @@ git add cmake/macros/FindOpenSSL.cmake (resolve)
 --sync to local and forked remote branch
 git commit -m 'merge upstream/3.3.5'
 git push origin 3.3.5
+
+# method 2 but you have to continue to fix conflicts mentioned in '.git/rebase-apply/patch'
+ I guess this is not a good method to merge upstream
+--fetch upstream
+git fetch upstream
+git checkout 3.3.5
+git rebase upstream/3.3.5
+
+--merge to local branch
+check `.git/rebase-apply/patch` if there is a conflict
+if fix apply the patch
+   edit the $file conflicts mentioned in `.git/rebase-apply/patch `
+   git add $file //to resolve conflicts
+   git rebase --continue
+else if you want to skip the patch
+   git rebase --skip
+else if you want to abort the current rebase
+   git rebase --abort
+
+--sync to local and forked remote branch
+you don't need to sync locally rebase automatically re-edit the commit history
+maybe you need a `git commit -a //add`, i'm not sure about it
+git push origin 3.3.5
+or
+git push origin HEAD:refs/for/yourbranch for gerrit
+
+
+
+
+
+

@@ -1,14 +1,21 @@
+// if you want to reset some dirty edits 
 git reset --soft
 or
 git reset HEAD^^^^^
 git pull
-//edit the .git/apply/patch to solve or git rebase --skip to skip the patch
-git rebase --abort //to abort
-git commit -a //add
-git push origin HEAD:refs/for/yourbranch
 
 
-//NORMAL PROCESS
-edit the conflicts
-git add the edited files
-git rebase --continue
+
+//NORMAL PROCESS if your branch local and the branch to merge are diverged
+git will let you know that there is a conflict in `.git/rebase-apply/patch`
+
+check `.git/rebase-apply/patch` if there is a conflict
+
+if fix apply the patch
+   edit the $file conflicts mentioned in `.git/rebase-apply/patch `
+   git add $file //to resolve conflicts
+   git rebase --continue
+else if you want to skip the patch
+   git rebase --skip
+else if you want to abort the current rebase
+   git rebase --abort
