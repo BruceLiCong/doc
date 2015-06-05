@@ -1,0 +1,15 @@
+if you are working on branch X, sometimes you reset your head and want to recover it
+
+
+
+git reset HEAD^ --hard,,,,
+
+if HEAD is on remote
+   git pull ..
+else
+   you can recover only if you remember the revision hash rev-hash
+   git checkout rev-hash // checkout at file level will create a detached branch, use `git branch -v` to check this.
+   git checkout -b newbranch // the branch is checkedout from detached branch, and contains the HEAD you want to recover.
+   git checkout X // back to your working branch
+   git merge newbranch // no need to commit
+   
