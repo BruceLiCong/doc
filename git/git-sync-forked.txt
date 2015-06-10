@@ -1,7 +1,7 @@
 # method 0
 git remote add upstream https://github.com/TrinityCore/TrinityCOre
 git pull upstream 3.3.5
-git commit the merge
+git commit
 git push origin 3.3.5
 
 # method 1
