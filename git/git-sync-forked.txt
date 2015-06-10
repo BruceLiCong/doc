@@ -1,3 +1,8 @@
+# method 0
+git remote add upstream https://github.com/TrinityCore/TrinityCOre
+git pull upstream 3.3.5
+git commit the merge
+git push origin 3.3.5
 
 # method 1
 reference: https://help.github.com/articles/syncing-a-fork/
