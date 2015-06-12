@@ -1,0 +1,2 @@
+git remote set-url origin git@gitlab.xxx.com:yyy.git
+git remote -v
