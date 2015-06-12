@@ -4,3 +4,6 @@ git branch -m oldbranch newbranch
 ;rename a branch remotely
 git push origin --delete oldbranch
 git push origin newbranch
+
+in case you cannot delete master on gitlab check this
+http://stackoverflow.com/questions/28318599/git-push-error-pre-receive-hook-declined
