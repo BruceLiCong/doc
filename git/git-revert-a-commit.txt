@@ -1,1 +1,6 @@
+// this will generate a commit like Revert " your commit message" and commited to the current branch
 git revert revhash
+git revert HEAD
+
+// revert to remote
+git push origin current_branch
