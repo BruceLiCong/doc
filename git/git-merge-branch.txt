@@ -1,0 +1,12 @@
+suppose you want to merge feature to master locally
+
+// clean up the feature branch
+git checkout feature
+git rebase -i revhash_masterhead
+
+// merge
+git checkout master
+git merge feature
+
+// push to remote
+git push origin master
