@@ -8,7 +8,7 @@
 ; font and text
 ;--------------------------------------------------------------------
 ;(set-frame-font "Consolas")
-;(set-frame-font "Monaco")
+(set-frame-font "Monaco")
 ;(set-face-attribute 'default nil :height 120) ;Font size ubuntu
 (set-face-attribute 'default nil :height 150) ;Font size mac
 (line-number-mode 1)
