@@ -1,0 +1,12 @@
+#show changed file in single commit, using SHOW command
+git show --stat HEAD
+git show --name-only revhash
+git show --name-status revhash
+
+#show contents, using SHOW or LOG -p
+git show HEAD
+git log -p revhash
+
+#show changed file between commits, using DIFF command
+git diff --name-only rev1 rev2
+git diff --stat HEAD^ HEAD
