@@ -18,12 +18,14 @@ git push origin 6.x
 
 ; sync origin 6.x to 6.x-local
 git checkout 6.x-local
-git merge 6.x
+git merge 6.x   ; recommended for long time offline development
+    or
+git rebase 6.x  ; recommonded for short time offline developement
 
 
 ; develop on local 6.x-local
 git checkout 6.x-local
-  .. develop & commit with REVHASH
+  .. develop & commit with REVHASH(s)
 
 
 ; send clean pull request
