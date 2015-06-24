@@ -18,9 +18,9 @@ git push origin 6.x
 
 ; sync origin 6.x to 6.x-local
 git checkout 6.x-local
-git merge 6.x   ; recommended for long time offline development
+git merge 6.x   ; recommended for long term offline development
     or
-git rebase 6.x  ; recommonded for short time offline developement
+git rebase 6.x  ; recommonded for short term offline development
 
 
 ; develop on local 6.x-local
