@@ -9,7 +9,7 @@ git branch -a
   origin   6.x-local
 
 
-; sync the upstream to clean copy 6.x on origin fast-forward
+; sync the upstream to clean copy 6.x on origin, git will merge fast-forward-ly every time
 git checkout 6.x
 git pull upstream 6.x
 git push origin 6.x
