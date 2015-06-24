@@ -2,6 +2,7 @@ design a new github branching model with cherry-pick
 
 ; branching model : origin 6.x is synced with remote upstream 6.x
                   : origin 6.x-local is the local develop branch of 6.x which is checked out from origin 6.x
+		    origin 6.x-local has many customized commits you don't want to send as pull-requests.
 git branch -a
   upstream 6.x
   origin   6.x
@@ -21,7 +22,7 @@ git merge 6.x
 
 ; develop on local 6.x-local
 git checkout 6.x-local
-  .. develop & commit as with REVHASH
+  .. develop & commit with REVHASH
 
 
 ; send clean pull request
