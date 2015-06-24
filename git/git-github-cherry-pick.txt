@@ -1,6 +1,7 @@
 design a new github branching model with cherry-pick
 
-; branching model : origin 6.x is a synced clean copy from upstream 6.x, it needs to update periodically.
+; branching model : upstream 6.x is the upstream branch you will fork.
+		  : origin 6.x is a clean copy forked from upstream 6.x, it needs to update periodically from upstream.
                   : origin 6.x-local is the  develop branch of 6.x on origin, which is checked out from origin 6.x.
 		    origin 6.x-local has many customized commits you don't want to send as pull-requests.
 git branch -a
