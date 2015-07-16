@@ -1,12 +1,5 @@
 ; AutoComplete
 ;--------------------------------------------------------------------
-(add-to-list 'load-path "~/.emacs.d")
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
-(ac-config-default)
-
-(setq ac-dwim t)
-(setq ac-fuzzy-enable t)
 
 ; GDB and Make
 ;--------------------------------------------------------------------
