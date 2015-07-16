@@ -1,3 +1,9 @@
+; AutoComplete
+;--------------------------------------------------------------------
+(add-to-list 'load-path "~/.emacs.d")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(ac-config-default)
 
 ; GDB and Make
 ;--------------------------------------------------------------------
@@ -8,7 +14,7 @@
 ; font and text
 ;--------------------------------------------------------------------
 ;(set-frame-font "Consolas")
-(set-frame-font "Monaco")
+;(set-frame-font "Monaco")
 ;(set-face-attribute 'default nil :height 120) ;Font size ubuntu
 (set-face-attribute 'default nil :height 150) ;Font size mac
 (line-number-mode 1)
@@ -203,8 +209,8 @@
 
 ; 启动窗口大小
 (setq default-frame-alist
-      ;'((height . 100)(width . 180) (menu-bar-lines . 0) (tool-bar-lines . 0)));PC
-      '((height . 34) (width . 140) (menu-bar-lines . 0) (tool-bar-lines . 0)));NB
+      '((height . 100)(width . 180) (menu-bar-lines . 0) (tool-bar-lines . 0)));PC
+      ;'((height . 34) (width . 140) (menu-bar-lines . 0) (tool-bar-lines . 0)));NB
 
 
 ;scroll other window
@@ -222,9 +228,9 @@
 ; C/C++
 ;--------------------------------------------------------------------
 (setq c-default-style "BSD")
-(setq c-basic-offset 4)
-(setq c-tab-width 4)
-(setq c-indent-level 4)
+(setq c-basic-offset 8)
+(setq c-tab-width 8)
+(setq c-indent-level 8)
 
 
 ;shell,gdb退出后，自动关闭该buffer
