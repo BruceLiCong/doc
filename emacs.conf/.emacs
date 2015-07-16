@@ -5,6 +5,9 @@
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (ac-config-default)
 
+(setq ac-dwim t)
+(setq ac-fuzzy-enable t)
+
 ; GDB and Make
 ;--------------------------------------------------------------------
 (setq gud-gdb-command-name "gdb --annotate=3 -cd ~/source/")
