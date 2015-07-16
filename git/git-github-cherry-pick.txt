@@ -1,0 +1,36 @@
+design a new github branching model with cherry-pick
+
+; branching model : upstream 6.x is the upstream branch you will fork.
+		  : origin 6.x is a clean copy forked from upstream 6.x, it needs to update periodically from upstream.
+                  : origin 6.x-local is the  develop branch of 6.x on origin, which is checked out from origin 6.x.
+		    origin 6.x-local has many customized commits you don't want to send as pull-requests.
+git branch -a
+  upstream 6.x
+  origin   6.x
+  origin   6.x-local
+
+
+; sync the upstream to clean copy 6.x on origin, git will merge fast-forward-ly every time
+git checkout 6.x
+git pull upstream 6.x
+git push origin 6.x
+
+
+; sync origin 6.x to 6.x-local
+git checkout 6.x-local
+git merge 6.x   ; recommended for long term offline development
+    or
+git rebase 6.x  ; recommonded for short term offline development
+
+
+; develop on local 6.x-local
+git checkout 6.x-local
+  .. develop & commit with REVHASH(s)
+
+
+; send clean pull request
+git checkout 6.x
+git checkout -b pull-request-branch
+git cherry-pick REVHASH
+  .. you may need to merge the conflicts genrated by cherry-pick, similar with git rebase process
+  .. send a pull request on the pull-request-branch in github web gui

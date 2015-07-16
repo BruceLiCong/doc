@@ -2,3 +2,12 @@
 https://ariejan.net/2009/10/26/how-to-create-and-apply-a-patch-with-git/
 
 dos2unix to convert format problem
+
+; generate patch
+git format-patch -1 HEAD --stdout > xxx.patch
+
+; test the patch
+git apply --check xxx.patch
+
+; apply the patch
+git am --signoff < xxx.patch
