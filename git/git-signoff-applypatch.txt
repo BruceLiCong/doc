@@ -11,3 +11,4 @@ git apply --check xxx.patch
 
 ; apply the patch
 git am --signoff < xxx.patch
+git am -s < xxx.patch
