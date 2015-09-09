@@ -1,4 +1,21 @@
-; Mac fix meta/option/alt key map in iTerm2, not the osx terminal
+; package repo
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (add-to-list
+   'package-archives
+   '("melpa" . "http://melpa.org/packages/")
+   t)
+  (package-initialize))
+
+; auto-complete
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "/Users/jinwei/.emacs.d/elpa/auto-complete-20150618.1949/dict")
+(ac-config-default)
+(setq ac-dwim t)
+(setq ac-fuzzy-enable t)
+ 
+
+;Mac fix meta/option/alt key map in iTerm2, not the osx terminal
 ; load xterm defaults in iterm2
 ; http://stackoverflow.com/questions/10867199/emacs-in-terminal-meta-arrow-keybindings
 (add-hook 'term-setup-hook
@@ -8,15 +25,6 @@
      (define-key function-key-map "\e[1;9C" [M-right])
      (define-key function-key-map "\e[1;9D" [M-left])))
 
-; AutoComplete
-;--------------------------------------------------------------------
-(add-to-list 'load-path "~/.emacs.d")
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
-(ac-config-default)
-
-(setq ac-dwim t)
-(setq ac-fuzzy-enable t)
 
 ; GDB and Make
 ;--------------------------------------------------------------------
@@ -29,7 +37,7 @@
 ;(set-frame-font "Consolas")
 (set-frame-font "Monaco")
 ;(set-face-attribute 'default nil :height 120) ;Font size ubuntu
-(set-face-attribute 'default nil :height 150) ;Font size mac
+(set-face-attribute 'default nil :height 190) ;Font size mac
 (line-number-mode 1)
 ;(global-linum-mode t ) ;line num in left side
 (show-paren-mode t);显示括号匹配
@@ -223,7 +231,7 @@
 ; 启动窗口大小
 (setq default-frame-alist
       ;'((height . 100)(width . 180) (menu-bar-lines . 0) (tool-bar-lines . 0)));PC
-      '((height . 34) (width . 140) (menu-bar-lines . 0) (tool-bar-lines . 0)));NB
+      '((height . 37) (width . 150) (menu-bar-lines . 0) (tool-bar-lines . 0)));NB
 
 
 ;scroll other window
