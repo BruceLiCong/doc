@@ -1,3 +1,7 @@
+method 1: use elpa package management
+
+method 2: install from source
+
    1：下载安装auto-complete
 
           可以进入终端直接利用命令行：
